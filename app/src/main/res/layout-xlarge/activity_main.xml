@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:id="@+id/main_layout"
+    tools:context="com.abdelwahabelazab.hackingnews.MainActivity"
+    android:background="@drawable/background">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttons"
+
+        >
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Recent News"
+            android:id="@+id/recent"
+            android:onClick="buRecent"
+            android:layout_weight="1"
+
+            android:background="@drawable/btn_red" style="@style/ButtonText"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Saved News"
+            android:layout_weight="1"
+            android:onClick="buSaved"
+            android:id="@+id/saved"
+
+            android:background="@drawable/btn_blue" style="@style/ButtonText"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/relative"
+        android:layout_below="@+id/buttons">
+
+    </RelativeLayout>
+</RelativeLayout>
